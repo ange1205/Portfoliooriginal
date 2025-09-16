@@ -1,0 +1,295 @@
+/* === NAVBAR (barre de navigation) === */
+.custom-navbar {
+  background-color: #F2055C; /* Couleur de fond rose */
+  font-family: Arial, sans-serif; /* Police Arial */
+  padding: 10px 0; /* Espacement en haut et en bas */
+}
+
+/* Style général des liens du menu */
+.navbar-nav .nav-link {
+  color: white; /* Texte en blanc */
+  font-size: 16px; /* Taille de la police */
+  margin: 0 18px; /* Espacement entre les mots */
+  transition: all 0.3s ease; /* Animation douce */
+}
+
+/* Lien actif (page actuelle) */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Texte en gras */
+  border-bottom: 2px solid #fff; /* Trait blanc en dessous */
+  padding-bottom: 2px; /* Légère marge entre texte et trait */
+}
+
+/* Effet au survol (hover) */
+.navbar-nav .nav-link:hover {
+  font-weight: bold; /* Passe en gras */
+  color: #fff; /* Reste blanc */
+}
+
+
+         /* la partie pour le bouton telecharger cv*/
+         /* === Bouton Télécharger CV === */
+.btn-cv {
+  background-color: #73022C;   /* Couleur bordeaux */
+  color: white;                /* Texte blanc */
+  font-weight: bold;           /* Texte en gras */
+  font-family: Arial, sans-serif; /* Police Arial */
+  padding: 8px 18px;           /* Espacement interne */
+  border-radius: 5px;          /* Coins arrondis */
+  text-decoration: none;       /* Pas de soulignement */
+  transition: all 0.3s ease;   /* Animation douce */
+}
+
+/* Effet au survol */
+.btn-cv:hover {
+  background-color: white;     /* Fond devient blanc */
+  color: black;                /* Texte devient noir */
+  box-shadow: 0 0 8px blue;    /* Effet halo bleu */
+}
+
+
+/* Police et fond */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Cartes compétences */
+.competence-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: #f8f8f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.competence-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Images dans les cartes */
+.competence-card img {
+  width: 100%;
+ height: 400px;        /* augmente la hauteur */
+object-fit: contain;  /* garde l’image entière sans la couper */
+background-color: #fff; /* pour éviter les bandes noires autour */
+ border-radius: 15px;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #f2055c; /* Couleur violet-rose */
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  width: 60px; /* Taille du logo */
+  height: auto;
+}
+
+.footer-divider {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: rgb(5, 0, 0);
+  font-size: 1.2rem;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fffdf6; /* Couleur au survol */
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-divider {
+    border: none;
+  }
+  .footer .col-md-3 {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Section Soft Skills ===== */
+.skills-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-section h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill-tag {
+  background: #73022c; /* Couleur des soft skills */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Section Outils ===== */
+.tools-section {
+  max-width: 700px;
+  margin: auto;
+}
+
+.tools-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Titres des catégories (gras) */
+.category {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Noms des outils (light) */
+.tool {
+  margin-bottom: 15px;
+  font-weight: 300; /* Texte plus léger */
+}
+
+.tool span {
+  display: inline-block;
+  width: 150px;
+}
+
+/* ===== Barres de progression ===== */
+.progress {
+  position: relative;
+  background: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* Barre colorée (par défaut invisible) */
+.progress-bar {
+  background: #f2055c;
+  height: 100%;
+  width: 0; /* Cachée au départ */
+  border-radius: 20px;
+  transition: width 1.2s ease-in-out;
+}
+
+/* Texte du pourcentage */
+.percent {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Quand la souris s’approche → la barre s’affiche */
+.progress:hover .progress-bar {
+  width: attr(data-value); /* essaie d'utiliser l’attribut data-value */
+}
+
+/* Hack CSS car attr(data-value) ne marche pas pour width → solution JS simple */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Barres de progression ===== */
+.progress {
+  background: #e6e6e6;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+}
+
+.progress-bar {
+  background: #f2055c; /* Couleur de base */
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background 0.5s ease; /* Animation douce */
+}
+
+/* Changement de couleur au survol */
+.progress:hover .progress-bar {
+  background: linear-gradient(90deg, #f2055c, #73022c);
+}

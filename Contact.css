@@ -1,0 +1,182 @@
+/* === NAVBAR (barre de navigation) === */
+.custom-navbar {
+  background-color: #F2055C; /* Couleur de fond rose */
+  font-family: Arial, sans-serif; /* Police Arial */
+  padding: 10px 0; /* Espacement en haut et en bas */
+}
+
+/* Style général des liens du menu */
+.navbar-nav .nav-link {
+  color: white; /* Texte en blanc */
+  font-size: 16px; /* Taille de la police */
+  margin: 0 18px; /* Espacement entre les mots */
+  transition: all 0.3s ease; /* Animation douce */
+}
+
+/* Lien actif (page actuelle) */
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Texte en gras */
+  border-bottom: 2px solid #fff; /* Trait blanc en dessous */
+  padding-bottom: 2px; /* Légère marge entre texte et trait */
+}
+
+/* Effet au survol (hover) */
+.navbar-nav .nav-link:hover {
+  font-weight: bold; /* Passe en gras */
+  color: #fff; /* Reste blanc */
+}
+
+
+         /* la partie pour le bouton telecharger cv*/
+         /* === Bouton Télécharger CV === */
+.btn-cv {
+  background-color: #73022C;   /* Couleur bordeaux */
+  color: white;                /* Texte blanc */
+  font-weight: bold;           /* Texte en gras */
+  font-family: Arial, sans-serif; /* Police Arial */
+  padding: 8px 18px;           /* Espacement interne */
+  border-radius: 5px;          /* Coins arrondis */
+  text-decoration: none;       /* Pas de soulignement */
+  transition: all 0.3s ease;   /* Animation douce */
+}
+
+/* Effet au survol */
+.btn-cv:hover {
+  background-color: white;     /* Fond devient blanc */
+  color: black;                /* Texte devient noir */
+  box-shadow: 0 0 8px blue;    /* Effet halo bleu */
+}
+
+
+
+
+/* --- SECTION HERO (image de fond) --- */
+.hero-contact {
+  background: url("bannierecontact.jpg") no-repeat center center/cover; /* Image de fond */
+  height: 350px; /* Hauteur fixe */
+ 
+}
+
+body{
+   background-color: #f5eaea; /* Gris clair pour toute la page */
+}
+
+
+/* --- Icônes de contact --- */
+.social-icon {
+  font-size: 20px;  /* Réduction de la taille (au lieu de 28px) */
+  color: #000;
+  transition: 0.3s;
+}
+
+
+.social-icon:hover {
+  color: #f2055c; /* Rose au survol */
+}
+
+/* --- Texte sous les icônes --- */
+.contact-icon + p {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* --- Icônes réseaux sociaux --- */
+.social-icon {
+  font-size: 28px;
+  color: #000;
+  transition: 0.3s;
+}
+.social-icon:hover {
+  color: #D9006C; /* Rose au survol */
+}
+
+/* --- Formulaire --- */
+.contact-form {
+  background-color: #6c6c6c; /* Gris foncé */
+  border-radius: 15px; /* Coins arrondis */
+}
+.contact-form input,
+.contact-form textarea {
+  border-radius: 8px; /* Coins arrondis */
+}
+.btn-submit {
+  background-color: #D9006C; /* Rose */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+.btn-submit:hover {
+  background-color: #fffdfe; /* Bordeaux */
+}
+
+
+
+
+
+
+/* Séparateurs verticaux entre les colonnes de contact */
+.container .row > .col-md-4 {
+  border-right: 2px solid rgba(0, 0, 0, 0.2); /* barre gris clair */
+}
+
+.container .row > .col-md-4:last-child {
+  border-right: none; /* pas de barre après le dernier élément */
+}
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #f2055c; /* Couleur violet-rose */
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  width: 60px; /* Taille du logo */
+  height: auto;
+}
+
+.footer-divider {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.social-icons a {
+  color: rgb(5, 0, 0);
+  font-size: 1.2rem;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fffdf6; /* Couleur au survol */
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-divider {
+    border: none;
+  }
+  .footer .col-md-3 {
+    margin-bottom: 15px;
+  }
+}
