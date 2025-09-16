@@ -1,0 +1,237 @@
+<!DOCTYPE html> <!-- Indique au navigateur qu’on utilise la norme HTML5 -->
+<html lang="fr"> <!-- Déclare que la langue principale de la page est le français (utile pour l'accessibilité et le SEO) -->
+<head> <!-- Début de l'en-tête (métadonnées, liens CSS, titre...) -->
+  <meta charset="UTF-8"> <!-- Définit l'encodage des caractères en UTF-8 pour supporter les accents et caractères spéciaux -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Règle la mise à l'échelle pour rendre le site responsive sur mobiles -->
+  <title>Portfolio - Accueil</title> <!-- Titre affiché dans l'onglet du navigateur -->
+
+  <!-- Lien vers Bootstrap CSS (librairie pour simplifier la mise en page) -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!-- Lien CDN Bootstrap + attributs SRI et crossorigin pour la sécurité et chargement -->
+   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- Icônes Bootstrap (utilisées via <i class="bi ...">) -->
+  <!-- Lien vers le fichier CSS personnalisé -->
+  <link rel="stylesheet" href="Accueil.css"> <!-- Ton fichier CSS local où tu définis .custom-navbar, .hero, etc. -->
+</head> <!-- Fin de l'en-tête -->
+<body> <!-- Début du corps de la page (tout le contenu visible) -->
+
+  <!-- ===== NAVBAR (Menu de navigation) ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar"> <!-- Barre de navigation : Bootstrap classes (expand pour larges écrans, fixed-top pour la fixer en haut). custom-navbar = style perso -->
+    <div class="container"> <!-- Conteneur Bootstrap pour centrer et limiter la largeur du contenu -->
+
+      <!-- Logo du site (tu peux remplacer par ton image logo.png) -->
+      <a class="navbar-brand text-white" href="#"> <!-- Lien du logo; href="#" renvoie en haut de page (remplace par index si besoin) -->
+        <img src="bbangie.png" alt="Logo" height="40"> <!-- Image du logo avec attribut alt (important pour accessibilité) -->
+      </a>
+
+      <!-- Bouton pour afficher/masquer le menu sur mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"> <!-- Bouton hamburger qui contrôle la classe .collapse via Bootstrap JS -->
+        <span class="navbar-toggler-icon"></span> <!-- Icône du bouton (style fournie par Bootstrap) -->
+      </button>
+
+      <!-- Liste des liens du menu -->
+      <div class="collapse navbar-collapse" id="menu"> <!-- Zone qui se plie/déplie en mobile (id référencé par data-bs-target) -->
+        <ul class="navbar-nav mx-auto"> <!-- Liste de navigation; mx-auto centre horizontalement le groupe d'items -->
+          <li class="nav-item"><a class="nav-link active" href="Acceuil.html">Accueil</a></li> <!-- Élément de menu : "Accueil". .active = visuellement actif -->
+          <li class="nav-item"><a class="nav-link" href="Apropos.html">À propos</a></li> <!-- Lien vers page À propos -->
+          <li class="nav-item"><a class="nav-link" href="Projet.html">Projets</a></li> <!-- Lien vers page Projets -->
+          <li class="nav-item"><a class="nav-link" href="Compétence.html">Compétences</a></li> <!-- Lien vers page Compétences -->
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li> <!-- Lien vers page Contact -->
+        </ul>
+      </div>
+      <div class="d-flex"> <!-- Conteneur flex pour aligner le bouton CV à droite de la navbar -->
+  <a href="Création logo promoMon CV.pdf" class="btn-cv" download>Télécharger CV</a> <!-- Lien qui propose de télécharger le fichier cv.pdf (attribut download) -->
+</div>
+    </div> <!-- fin .container -->
+  </nav> <!-- fin navbar -->
+
+            
+<!-- ===== SECTION HERO ===== -->
+<section class="hero container-fluid"> <!-- Section principale -->
+  <div class="row align-items-center hero-overlay"> <!-- ajout overlay pour lisibilité -->
+
+    <!-- Colonne gauche (Texte) -->
+    <div class="col-md-6 hero-text">
+                            <h1 class="hero-title">Community <br> manager</h1>
+
+      <h2 class="hero-subtitle">
+        Je suis <span id="typing" class="bold-text"></span>
+      </h2>
+
+      <h2 class="hero-role">je viens de loin mais je vise loin</h2>
+
+      <div class="hero-buttons">
+        <a href="Apropos.html" class="btn-hero btn-explore">Explorez plus</a>
+        <a href="Contact.html" class="btn-hero btn-contact">Contactez-moi</a>
+      </div>
+    </div>
+
+    <!-- Colonne droite vide (pour garder l’équilibre du design) -->
+    <div class="col-md-6"></div>
+
+  </div>
+</section>
+
+
+
+<!-- Lien vers ton JS -->
+<script src="script.js"></script> <!-- Fichier JS local où tu peux mettre le code du typing et autres interactions -->
+
+  <!-- Lien vers Bootstrap JS (permet d’activer le menu responsive sur mobile) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <!-- Bundle JS de Bootstrap (inclut Popper) -->
+
+
+
+
+
+
+<!-- ===== SECTION 2 ===== -->
+<section class="section-two container py-5"> <!-- Section présentant Valeurs/Objectifs/Vision ; py-5 ajoute du padding vertical -->
+  <div class="row text-center g-4"> <!-- row avec texte centré et gap (espacement) g-4 -->
+
+    <!-- Colonne 1 : Valeurs -->
+    <div class="col-md-4"> <!-- 3 colonnes sur md+ -->
+      <div class="card custom-card p-4"> <!-- Card Bootstrap + classes persos -->
+        <div class="icon-circle"> <!-- Conteneur d'icône (styling dans CSS) -->
+          <i class="bi bi-star-fill fa-2x"></i> <!-- Icône Valeurs (Bootstrap Icons). fa-2x est une classe de FontAwesome mais ici elle ne fera rien si FontAwesome n'est pas chargé ; tu peux gérer la taille via CSS -->
+        </div>
+        <h3>Valeurs</h3> <!-- Titre de la carte -->
+        <p>Authenticité</p> <!-- Item valeur 1 -->
+        <p>Excellence</p> <!-- Item valeur 2 -->
+        <p>Fidélité</p> <!-- Item valeur 3 -->
+      </div>
+    </div>
+
+    <!-- Colonne 2 : Objectifs -->
+    <div class="col-md-4">
+      <div class="card custom-card p-4">
+        <div class="icon-circle">
+          <i class="bi bi-bullseye fa-2x"></i> <!-- Icône cible pour "Objectifs" -->
+        </div>
+        <h3>Objectifs</h3>
+        <p>Inspirer</p>
+        <p>Développer</p>
+        <p>Innover</p>
+      </div>
+    </div>
+
+    <!-- Colonne 3 : Vision -->
+    <div class="col-md-4">
+      <div class="card custom-card p-4">
+        <div class="icon-circle">
+          <i class="bi bi-eye-fill fa-2x"></i> <!-- Icône œil pour "Vision" -->
+        </div>
+        <h3>Vision</h3>
+        <p>Transformer</p>
+        <p>Accompagner</p>
+        <p>Engager</p>
+      </div>
+    </div>
+  </div> <!-- fin row -->
+
+   <!-- Bouton "En savoir plus" -->
+  <div class="text-center mt-4">
+    <a href="Apropos.html" class="btn btn-primary">Découvrez plus</a> <!-- Bouton Bootstrap primaire centré -->
+  </div>
+</section> <!-- fin section-two -->
+
+
+
+
+<!-- ===== SECTION Témoignages ===== -->
+<section class="section-testimonials py-5"> <!-- Section témoignages -->
+  <div class="container text-center"> <!-- container centré -->
+
+    <h2 class="section-title mb-5">Découvrez ce que dit les autres de moi</h2> <!-- Titre de la section -->
+
+    <div class="testimonial-slider"> <!-- Conteneur pour slider (nécessite JS/CSS pour faire défiler) -->
+      
+      <!-- Témoignage 1 -->
+      <div class="testimonial-card"> <!-- Carte de témoignage (style perso) -->
+        <img src="maasta.jpeg" alt="Monsieur Asta Diop"> <!-- Photo du(e) témoignage -->
+        <h5>Monsieur Asta Diop</h5> <!-- Nom -->
+        <p class="role">Directeur de L’ANPEJ Ziguinchor</p> <!-- Rôle / titre -->
+        <p class="testimonial-text">
+          Témoignage: une fille sérieuse et travailleuse, qui a bénéficié d’un accompagnement de l’Anpej Anpej et sur le volet numérique de Simplon Ziguinchor et les filles de La cohorte SAS women Sendigitour vous encourageant
+        </p> <!-- Texte du témoignage -->
+      </div>
+
+      <!-- Témoignage 2 -->
+      <div class="testimonial-card">
+        <img src="carte.png" alt="Monsieur Tapha Mendy">
+        <h5>Monsieur Tapha Mendy</h5>
+        <p class="role">Directeur FAP</p>
+        <p class="testimonial-text">
+          Témoignage: Une brave demoiselle motivée, intelligente et prête à relever les défis et montrer ses compétences
+        </p>
+      </div>
+
+    </div> <!-- fin testimonial-slider (penser à ajouter JS pour carousel si tu veux l'animation) -->
+  </div> <!-- fin container -->
+
+  
+</section> <!-- fin section-testimonials -->
+
+
+
+<!-- Font Awesome CDN pour les icônes -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Kit FontAwesome (si tu veux utiliser des icônes FA) -->
+
+
+
+
+<!-- Footer -->
+<footer class="footer py-4"> <!-- Pied de page -->
+  <div class="container">
+    <div class="row align-items-center text-white"> <!-- Ligne du footer, texte en blanc -->
+
+      <!-- Colonne gauche : Logo + nom -->
+      <div class="col-md-3 text-center text-md-start mb-3 mb-md-0"> <!-- Sur mobile centré, sur md+ aligné à gauche -->
+        <h6 class="fw-bold">Angélique Manga</h6> <!-- Nom / titre -->
+        <img src="bbangie.png" alt="Logo" class="footer-logo mt-2"> <!-- Petit logo dans le footer -->
+      </div>
+
+      <!-- Colonne centre gauche : Accès -->
+      <div class="col-md-3 text-center mb-3 mb-md-0 footer-divider"> <!-- Liens de navigation -->
+        <h6 class="fw-bold">Accès</h6>
+        <ul class="list-unstyled"> <!-- Liste sans puces -->
+          <li><a href="Acceuil.html" class="footer-link">Accueil</a></li>
+          <li><a href="Apropos.html" class="footer-link">À propos</a></li>
+          <li><a href="Projet.html" class="footer-link">Projets</a></li>
+          <li><a href="Compétence.html" class="footer-link">Compétences</a></li>
+          <li><a href="Contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne centre droite : Services -->
+      <div class="col-md-3 text-center mb-3 mb-md-0 footer-divider">
+        <h6 class="fw-bold">Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="Compétence.html" class="footer-link">Identité visuelle</a></li>
+          <li><a href="Compétence.html" class="footer-link">Community manager</a></li>
+          <li><a href="Compétence.html" class="footer-link">Développement web</a></li>
+          <li><a href="Compétence.html" class="footer-link">Marketing digital</a></li>
+          <li><a href="Compétence.html" class="footer-link">Gestion de projet</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne droite : Réseaux + CV -->
+      <div class="col-md-3 text-center text-md-end d-flex flex-column align-items-center align-items-md-end"> <!-- Zone d'icônes sociales et bouton CV -->
+        <h6 class="fw-bold mb-2">Suivez-moi</h6>
+        <div class="social-icons mb-2"> <!-- Icônes réseaux sociaux -->
+          <a href="https://www.linkedin.com/in/ang%C3%A9lique-manga-2abaa9305/"><i class="bi bi-linkedin"></i></a> <!-- Icône LinkedIn (Bootstrap Icons) -->
+          <a href="#"><i class="bi bi-tiktok"></i></a> <!-- Icône TikTok (si disponible dans la version d'icônes) -->
+        </div>
+        <a href="Création logo promoMon CV.pdf" class="btn btn-light fw-bold" download>Télécharger le CV</a> <!-- Bouton pour télécharger le CV -->
+      </div>
+    </div>
+
+    <!-- Ligne copyright -->
+    <div class="row mt-3">
+      <div class="col text-center text-white small">
+        © 2025 Angélique Manga. Tous droits réservés. <!-- Mention de copyright -->
+      </div>
+    </div>
+  </div>
+</footer> <!-- fin footer -->
+</body> <!-- fin body -->
+</html> <!-- Fin du document HTML -->

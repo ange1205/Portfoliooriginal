@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!-- Indique au navigateur qu’on utilise la norme HTML5 -->
+<html lang="fr"> <!-- La langue principale du site est le français -->
+<head>
+  <meta charset="UTF-8"> <!-- Encodage UTF-8 pour supporter les accents -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site responsive -->
+  <title>Portfolio - Accueil</title> <!-- Titre affiché dans l’onglet du navigateur -->
+
+  <!-- Lien vers Bootstrap CSS (librairie pour simplifier la mise en page) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers le fichier CSS personnalisé -->
+  <link rel="stylesheet" href="Projet.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (Menu de navigation) ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container"> <!-- Container Bootstrap pour centrer le contenu -->
+
+      <!-- Logo du site (tu peux remplacer par ton image logo.png) -->
+      <a class="navbar-brand text-white" href="#">
+        <img src="bbangie.png" alt="Logo" height="40"> <!-- Logo du site -->
+      </a>
+
+      <!-- Bouton pour afficher/masquer le menu sur mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Liste des liens du menu -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto"> <!-- mx-auto = centrer horizontalement -->
+          <li class="nav-item"><a class="nav-link" href="Acceuil.html">Accueil</a></li> <!-- Page Accueil -->
+          <li class="nav-item"><a class="nav-link" href="Apropos.html">À propos</a></li> <!-- Page À propos -->
+          <li class="nav-item"><a class="nav-link active" href="Projet.html">Projets</a></li> <!-- Page Projets -->
+          <li class="nav-item"><a class="nav-link" href="Compétence.html">Compétences</a></li> <!-- Page Compétences -->
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li> <!-- Page Contact -->
+        </ul>
+      </div>
+      <div class="d-flex">
+  <a href="cv.pdf" class="btn-cv" download>Télécharger CV</a>
+</div>
+
+    </div>
+  </nav>
+
+  <!-- Lien vers Bootstrap JS (permet d’activer le menu responsive sur mobile) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <!-- SECTION INTRO -->
+<section class="text-center py-5 mt-5">
+  <p>
+    Mes projets sont le reflet de ma passion pour le digital et la créativité : des solutions utiles, belles et impactantes,<br> pensées pour répondre aux besoins d’aujourd’hui et de demain.
+  </p>
+</section>
+  <h4 class="fw-bold text-danger text-center">
+  Découvrez ce que j’ai déjà réalisé
+</h4>
+  </section>
+
+  <!-- SECTION TIMELINE -->
+  <section class="timeline">
+
+    <!-- Projet 1 -->
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h5>Restaurant Ram’s</h5>
+        <p><strong>Description :</strong> Développement d’une identité visuelle moderne pour un restaurant africain.<br>
+        <strong>Mon rôle :</strong> Création du logo, choix de la palette de couleurs, typographie et maquette graphique.<br>
+        <strong>Impact :</strong> Donner une image professionnelle et cohérente au restaurant.</p>
+        <p><a href="https://drive.google.com/drive/folders/148VVvcJ0ON8NDo7q1jsczkm1l5B-NTG0">Lien vers la réalisation</a></p>
+      </div>
+    </div>
+
+    <!-- Projet 2 -->
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h5>Santa Market</h5>
+        <p>Mise en place d’une plateforme e-commerce dédiée à la vente de produits artisanaux et écoresponsables.<br>
+        <strong>Mon rôle :</strong> Conception du site, design de l’interface, réflexion sur l’expérience utilisateur.<br>
+        <strong>Impact :</strong> Mettre en valeur l’artisanat local et encourager une consommation plus durable.</p>
+        <p><a href="#">Lien vers la réalisation</a></p>
+      </div>
+    </div>
+
+    <!-- Projet 3 -->
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h5>Application de recyclage</h5>
+        <p><strong>Description :</strong> Projet d’application mobile pour la gestion et le recyclage des déchets au Sénégal.<br>
+        <strong>Mon rôle :</strong> Conception des fonctionnalités, maquette de l’application.<br>
+        <strong>Impact :</strong> Sensibiliser les citoyens et faciliter le recyclage dans les villes.</p>
+        <p><a href="#">Lien vers la réalisation</a></p>
+      </div>
+    </div>
+
+    <!-- Projet 4 -->
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <h5>Identité visuelle personnelle</h5>
+        <p><strong>Description :</strong> Création de mon identité visuelle pour renforcer ma présence en ligne.<br>
+        <strong>Mon rôle :</strong> Création du logo, charte graphique, maquette portfolio.<br>
+        <strong>Impact :</strong> Renforcer ma visibilité et ma crédibilité professionnelle.</p>
+        <p><a href="https://drive.google.com/drive/folders/1N5vr2rUfw7eDDIBDNEz9Lz6xqtY-oTR7">Lien vers la réalisation</a></p>
+      </div>
+    </div>
+
+    <!-- Projet 5 -->
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <h5>Accompagnement d’un jeune entrepreneur</h5>
+        <p><strong>Description :</strong> Aider un jeune entrepreneur à développer sa visibilité en ligne.<br>
+        <strong>Mon rôle :</strong> Création de visuels, mise en place d’une stratégie digitale.<br>
+        <strong>Impact :</strong> Amélioration de son image de marque et de sa présence sur les réseaux.</p>
+        <p><a href="#">Lien vers la réalisation</a></p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SECTION BOUTON -->
+  <div class="text-center my-5">
+    <a href="Compétence.html" class="btn btn-lg btn-dark rounded-pill">Découvre mes compétences</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<!-- Footer -->
+<footer class="footer py-4">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      
+      <!-- Colonne gauche : Logo + nom -->
+      <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+        <h6 class="fw-bold">Angélique Manga</h6>
+        <img src="bbangie.png" alt="Logo" class="footer-logo mt-2">
+      </div>
+
+      <!-- Colonne centre gauche : Accès -->
+      <div class="col-md-3 text-center mb-3 mb-md-0 footer-divider">
+        <h6 class="fw-bold">Accès</h6>
+        <ul class="list-unstyled">
+          <li><a href="Acceuil.html" class="footer-link">Accueil</a></li>
+          <li><a href="Apropos.html" class="footer-link">À propos</a></li>
+          <li><a href="Projet.html" class="footer-link">Projets</a></li>
+          <li><a href="Compétence.html" class="footer-link">Compétences</a></li>
+          <li><a href="Contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne centre droite : Services -->
+      <div class="col-md-3 text-center mb-3 mb-md-0 footer-divider">
+        <h6 class="fw-bold">Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="Compétence.html" class="footer-link">Identité visuelle</a></li>
+          <li><a href="Compétence.html" class="footer-link">Community manager</a></li>
+          <li><a href="Compétence.html" class="footer-link">Développement web</a></li>
+          <li><a href="Compétence.html" class="footer-link">Marketing digital</a></li>
+          <li><a href="Compétence.html" class="footer-link">Gestion de projet</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne droite : Réseaux + CV -->
+      <div class="col-md-3 text-center text-md-end d-flex flex-column align-items-center align-items-md-end">
+        <h6 class="fw-bold mb-2">Suivez-moi</h6>
+        <div class="social-icons mb-2">
+          <a href="https://www.linkedin.com/in/ang%C3%A9lique-manga-2abaa9305/"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <a href="cv.pdf" class="btn btn-light fw-bold" download>Télécharger le CV</a>
+      </div>
+    </div>
+
+    <!-- Ligne copyright -->
+    <div class="row mt-3">
+      <div class="col text-center text-white small">
+        © 2025 Angélique Manga. Tous droits réservés.
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
