@@ -1,0 +1,234 @@
+<!DOCTYPE html> <!-- Indique au navigateur qu’on utilise la norme HTML5 -->
+<html lang="fr"> <!-- La langue principale du site est le français -->
+<head>
+  <meta charset="UTF-8"> <!-- Encodage UTF-8 pour supporter les accents -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rend le site responsive -->
+  <title>Portfolio - Accueil</title> <!-- Titre affiché dans l’onglet du navigateur -->
+
+  <!-- Lien vers Bootstrap CSS (librairie pour simplifier la mise en page) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers le fichier CSS personnalisé -->
+  <link rel="stylesheet" href="Apropos.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (Menu de navigation) ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container"> <!-- Container Bootstrap pour centrer le contenu -->
+
+      <!-- Logo du site (tu peux remplacer par ton image logo.png) -->
+      <a class="navbar-brand text-white" href="#">
+        <img src="bbangie.png" alt="Logo" height="40"> <!-- Logo du site -->
+      </a>
+
+      <!-- Bouton pour afficher/masquer le menu sur mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Liste des liens du menu -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto"> <!-- mx-auto = centrer horizontalement -->
+          <li class="nav-item"><a class="nav-link " href="Acceuil.html">Accueil</a></li> <!-- Page Accueil -->
+          <li class="nav-item"><a class="nav-link active" href="Apropos.html">À propos</a></li> <!-- Page À propos -->
+          <li class="nav-item"><a class="nav-link" href="Projet.html">Projets</a></li> <!-- Page Projets -->
+          <li class="nav-item"><a class="nav-link" href="Compétence.html">Compétences</a></li> <!-- Page Compétences -->
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li> <!-- Page Contact -->
+        </ul>
+      </div>
+      <div class="d-flex">
+  <a href="cv.pdf" class="btn-cv" download>Télécharger CV</a>
+</div>
+
+    </div>
+  </nav>
+
+  <!-- Lien vers Bootstrap JS (permet d’activer le menu responsive sur mobile) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- ===== SECTION A PROPOS ===== -->
+<section class="about container">
+  <div class="row align-items-center">
+
+    <!-- Image à gauche -->
+    <div class="col-md-6 about-image">
+      <img src="angeliquemanga.jpg" alt="Photo de Angélique Manga" class="img-fluid">
+    </div>
+
+    <!-- Texte à droite -->
+    <div class="col-md-6 about-text">
+      <p>
+        je viens d'une terre de culture, de courage, de beauté. <br>
+        Je viens d’un endroit où on ne parle pas souvent de digital, 
+        mais où les talents dorment, prêts à éclore.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SECTION PRESENTATION -->
+  <section class="container my-5">
+    <div class="row text-center gy-4">
+      <div class="col-md-6">
+        <div class="info-box">
+          <h3>Je suis</h3>
+          <p>Je suis Angélique Manga, passionnée par le digital, l’innovation et la créativité. Originaire de la Casamance où la créativité est une richesse, j’ai choisi de transformer mes idées en solutions concrètes et impactantes.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-box">
+          <h3>Mes valeurs</h3>
+          <p>Authenticité, courage et excellence. Chaque projet que je mène reflète mon engagement à rester fidèle à mes principes tout en cherchant à inspirer et à impacter positivement mon environnement.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-box">
+          <h3>Mes objectifs</h3>
+          <p>Élargir mon expertise, créer des projets qui inspirent et développer des solutions innovantes qui répondent aux besoins de demain.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-box">
+          <h3>Ma vision</h3>
+          <p>Faire du digital un outil au service de la transformation, en donnant vie à des idées qui font la différence. Je m’engage à accompagner les projets avec passion, expertise et créativité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION BOUTON -->
+  <div class="text-center my-4">
+    <a href="Projet.html" class="btn btn-primary btn-lg">Découvrez mes projets</a>
+  </div>
+
+  <!-- SECTION PHOTOS + TEXTE -->
+  <section id="projets" class="container my-5">
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <h3>Ma formation en Référent digital</h3>
+        <p>Animée par une soif de découverte, j’ai décidé d’explorer le monde du digital. Cette curiosité m’a guidée jusqu’à Simplon Sénégal, un catalyseur de talents. Mon ambition est de devenir une professionnelle polyvalente, capable d’apporter des solutions innovantes et de contribuer activement à la transformation digitale de mon environnement.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="img-gallery">
+          <img src="simplon.jpg" class="img-fluid gallery-main" alt="formation">
+          <img src="folie.jpg" class="img-fluid gallery-hover" alt="formation 2">
+        </div>
+      </div>
+    </div>
+
+    <div class="row gy-4 mt-5">
+      <div class="col-md-6 order-md-2">
+        <h3>Mes études à UNCHK</h3>
+        <p>Après mon parcours en Terminale S2, j’ai choisi de poursuivre mes études en Maths Appliquées et Informatique. Ce cursus m’a permis de consolider mes bases scientifiques et d’entrer dans l’univers du digital, un monde où créativité et innovation se conjuguent pour transformer des idées en solutions concrètes.</p>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="img-gallery">
+          <img src="uvs.jpg" class="img-fluid gallery-main" alt="études">
+          <img src="uvsange.jpg" class="img-fluid gallery-hover" alt="études 2">
+        </div>
+      </div>
+    </div>
+
+    <div class="row gy-4 mt-5">
+      <div class="col-md-6">
+        <h3>Mes expériences en terminal</h3>
+        <p>Durant ma classe de Terminale S2, j’ai forgé les bases d’une rigueur scientifique solide et d’un esprit logique aiguisé. J’y ai appris à analyser, structurer et résoudre des problèmes complexes, tout en développant des compétences essentielles comme l’esprit critique, l’organisation et l’autonomie.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="img-gallery">
+          <img src="terminal.jpg" class="img-fluid gallery-main" alt="terminal">
+          <img src="terminalange.jpg" class="img-fluid gallery-hover" alt="terminal 2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOUTON CONTACT -->
+  <div class="text-center my-5">
+    <a href="Contact.html" class="btn btn-contact">Contactez-moi</a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- Footer -->
+<footer class="footer py-4">
+  <div class="container">
+    <div class="row align-items-center text-white">
+      
+      <!-- Colonne gauche : Logo + nom -->
+      <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+        <h6 class="fw-bold">Angélique Manga</h6>
+        <img src="bbangie.png" alt="Logo" class="footer-logo mt-2">
+      </div>
+
+      <!-- Colonne centre gauche : Accès -->
+      <div class="col-md-3 text-center mb-3 mb-md-0 footer-divider">
+        <h6 class="fw-bold">Accès</h6>
+        <ul class="list-unstyled">
+          <li><a href="Acceuil.html" class="footer-link">Accueil</a></li>
+          <li><a href="Apropos.html" class="footer-link">À propos</a></li>
+          <li><a href="Projet.html" class="footer-link">Projets</a></li>
+          <li><a href="Compétence.html" class="footer-link">Compétences</a></li>
+          <li><a href="Contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne centre droite : Services -->
+      <div class="col-md-3 text-center mb-3 mb-md-0 footer-divider">
+        <h6 class="fw-bold">Services</h6>
+        <ul class="list-unstyled">
+          <li><a href="Compétence.html" class="footer-link">Identité visuelle</a></li>
+          <li><a href="Compétence.html" class="footer-link">Community manager</a></li>
+          <li><a href="Compétence.html" class="footer-link">Développement web</a></li>
+          <li><a href="Compétence.html" class="footer-link">Marketing digital</a></li>
+          <li><a href="Compétence.html" class="footer-link">Gestion de projet</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne droite : Réseaux + CV -->
+      <div class="col-md-3 text-center text-md-end d-flex flex-column align-items-center align-items-md-end">
+        <h6 class="fw-bold mb-2">Suivez-moi</h6>
+        <div class="social-icons mb-2">
+          <a href="https://www.linkedin.com/in/ang%C3%A9lique-manga-2abaa9305/"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+        <a href="cv.pdf" class="btn btn-light fw-bold" download>Télécharger le CV</a>
+      </div>
+    </div>
+
+    <!-- Ligne copyright -->
+    <div class="row mt-3">
+      <div class="col text-center text-white small">
+        © 2025 Angélique Manga. Tous droits réservés.
+      </div>
+    </div>
+  </div>
+</footer>
+</html>
